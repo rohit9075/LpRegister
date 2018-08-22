@@ -48,6 +48,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
      * intiView Method definition
      */
     private void initView() {
+
         mEditTextFirstName = findViewById(R.id.editText_first_name);
         mEditTextLastName = findViewById(R.id.editText_last_name);
         mEditTextEmail = findViewById(R.id.editText_email);
@@ -77,11 +78,9 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 break;
 
             case R.id.textView_already_member:
-
                 break;
 
             case R.id.imageView:
-
                 break;
         }
 
@@ -94,8 +93,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
         StringBuilder sb = new StringBuilder();
 
-     sb.append(mEditTextFirstName.getText().toString().trim());
-     sb.append("  ");
+        sb.append(mEditTextFirstName.getText().toString().trim());
+        sb.append("  ");
         sb.append(mEditTextLastName.getText().toString().trim());
         sb.append("  ");
         sb.append(mEditTextEmail.getText().toString().trim());
